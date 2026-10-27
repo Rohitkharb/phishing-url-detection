@@ -360,3 +360,81 @@ It helps others discover the project and supports future improvements.
 ## 📄 License
 
 This project is licensed under the MIT License.
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Rohitkharb/phishing-url-detection.git
+cd phishing-url-detection
+```
+
+### 2. Create and activate a virtual environment
+
+**Windows PowerShell**
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+### 3. Install dependencies
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+pip install fastapi uvicorn
+```
+
+### 4. Run the FastAPI backend
+
+Open a terminal and run:
+
+```bash
+python -m uvicorn app:app --host 127.0.0.1 --port 8000
+```
+
+The API documentation is available at:
+
+http://127.0.0.1:8000/docs
+
+### 5. Run the Streamlit interface
+
+Open a second terminal, activate the same virtual environment, and run:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Open the local URL displayed in your terminal, usually:
+
+http://localhost:8501
+
+## 🧪 Testing
+
+Test the application with legitimate and suspicious-looking URLs. Compare the predictions with known labels and investigate incorrect predictions.
+
+**Note:** Predictions are model estimates, not guarantees that a website is safe or malicious. A high confidence score does not guarantee correctness.
+
+## 🔧 Technologies Used
+
+- Python
+- Scikit-learn
+- Pandas and NumPy
+- Streamlit
+- FastAPI and Uvicorn
+- Machine Learning and URL Feature Extraction
+
+## 📌 Project Limitations
+
+- Model predictions can produce false positives and false negatives.
+- Performance depends on the quality and representativeness of the training data.
+- Predictions should not be treated as a substitute for independent security checks.
+
+## 👨‍💻 Author
+
+**Rohit Kharb**
+
+- GitHub: [Rohitkharb](https://github.com/Rohitkharb)
