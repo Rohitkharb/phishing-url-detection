@@ -412,6 +412,14 @@ Open the local URL displayed in your terminal, usually:
 
 http://localhost:8501
 
+## 📸 Application Screenshots
+
+### Legitimate URL Detection
+![Legitimate URL Detection](screenshots/legitimate-url.png)
+
+### Phishing URL Detection
+![Phishing URL Detection](screenshots/phishing-url.png)
+
 ## 🧪 Testing
 
 Test the application with legitimate and suspicious-looking URLs. Compare the predictions with known labels and investigate incorrect predictions.
